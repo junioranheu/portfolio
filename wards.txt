@@ -1,0 +1,5 @@
+--
+"Traduzir" os nomes das classes pra portugues
+Melhorar responsivdade
+Dps que finalizar, tem que apagar tudo do github para por de novo pra n ficar rastros do kibe
+Criar animações on scroll 

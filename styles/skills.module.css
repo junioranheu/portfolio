@@ -1,0 +1,123 @@
+/* ~ Browser ~ */
+.browser {
+    /* background-color: pink !important; */
+    align-self: center;
+    width: 630px;
+    height: 420px;
+
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 0 20px 3px rgba(32, 35, 42, 0.14);
+    margin: 1em 0 0em;
+    overflow-y: auto;
+}
+
+.browser::-webkit-scrollbar {
+    width: 5px;
+  }
+
+/* ~ Browser Bar ~ */
+.browserBar {
+    /* background-color: pink !important; */
+    background: #EEF1F5;
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #DEE0E4;
+    overflow: hidden;
+}
+
+.browserBar .options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.options .option {
+    height: 12px;
+    width: 12px;
+    border-radius: 50px;
+    margin: 0 5px;
+}
+
+.close {
+    background: #EF534A;
+}
+
+.minimise {
+    background: #EDC04A;
+}
+
+.expand {
+    background: #97D272;
+}
+
+/* ~ Browser Content ~ */
+.browserContent {
+    /* background-color: pink !important; */
+    height: 100%;
+}
+
+.row {
+    padding: 0px 15px;
+    border-bottom: 1px solid #EBEFF4;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.row:hover {
+    background: #EBEFF4;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.row>p {
+    /* background-color: pink; */
+    align-self: flex-start;
+    width: 50px;
+}
+
+.row i {
+    /* background-color: red !important; */
+    margin-right: 10px;
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 3px;
+    width: 30px;
+}
+
+.row .heading {
+    position: relative;
+    top: -5px;
+    color: #616B7F;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.stars {
+    /* background-color: pink; */
+    color: black;
+    margin: -5px 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-left: auto;
+    max-width: 300px;
+}
+
+.fas {
+    font-weight: 900 !important;
+}
+
+.stars i {
+    font-size: 22px;
+}
+
+.stars i:hover {
+    transform: scale(1.2);
+    transition: transform .4s ease;
+}
