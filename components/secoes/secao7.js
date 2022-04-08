@@ -22,8 +22,9 @@ export default function Secao7({ refSessao7, corFundo, corTexto }) {
                         &nbsp;<a href='https://www.facebook.com/JuniorAnheu' target='_blank' rel='noreferrer'>Facebook</a>.
                     </p>
 
+                    <br/>
                     <p className={Styles.lead}>
-                        Obrigado e tenha {diaDaSemana} :)
+                        Obrigado por chegar até aqui.<br/>Tenha {diaDaSemana} :)
                     </p>
                 </div>
             </div>

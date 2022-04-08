@@ -18,7 +18,7 @@
 
 .browser::-webkit-scrollbar {
     width: 5px;
-  }
+}
 
 /* ~ Browser Bar ~ */
 .browserBar {
@@ -62,11 +62,11 @@
 }
 
 .row {
+    /* background-color: pink; */
+    display: flex;
+
     padding: 0px 15px;
     border-bottom: 1px solid #EBEFF4;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
 }
 
 .row:hover {
@@ -76,7 +76,10 @@
 }
 
 .row>p {
-    /* background-color: pink; */
+    /* background-color: red; */
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
     align-self: flex-start;
     width: 50px;
 }

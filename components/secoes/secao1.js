@@ -6,8 +6,8 @@ export default function Secao1(props) {
         <section className={Styles.secao1} ref={props.refSessao1} style={{ backgroundColor: props.corFundo, color: props.corTexto }}>
             <div className={Styles.section__inner}>
                 <div className={Styles.block}>
-                    <a className={Styles.pre} ><span>#1</span>Olá</a>
-                    <h2 className={Styles.semMargem}>Olá :)</h2>
+                    <a className={Styles.pre}><span>#1</span>Olá</a>
+                    <h1 className={Styles.semMargem}>Olá :)</h1>
                     <h3 className={Styles.margemTopPequena}>Seja bem-vind@ ao meu portfólio</h3>
 
                     <ul className={Styles.anchornav}>

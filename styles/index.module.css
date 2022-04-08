@@ -25,6 +25,16 @@
     padding: 20vh 50px 20vh 75px;
 }
 
+.secao1 h1 {
+    /* color: red; */
+    font-size: 3rem;
+}
+
+.secao1 h3 {
+    /* color: blue; */
+    font-size: 1.2rem;
+}
+
 .anchornav {
     margin: 0;
     padding: 0;
