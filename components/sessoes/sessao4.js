@@ -11,7 +11,7 @@ export default function Sessao4({ refSessao4, corFundo, corTexto }) {
 
             <div className={Styles.section__inner}>
                 <div className={Styles.block}>
-                    <a className={Styles.pre}><span>#3</span>Carreira</a>
+                    <a className={Styles.pre}><span>#4</span>Carreira</a>
                     <h2>Minha carreira</h2>
 
                     <Timeline />

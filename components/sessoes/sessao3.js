@@ -11,7 +11,7 @@ export default function Sessao3({ refSessao3, corFundo, corTexto }) {
 
             <div className={Styles.section__inner}>
                 <div className={Styles.block}>
-                    <a className={Styles.pre}><span>#2</span>Skills</a>
+                    <a className={Styles.pre}><span>#3</span>Skills</a>
 
                     <h2>Conhecimentos e habilidades.</h2>
 

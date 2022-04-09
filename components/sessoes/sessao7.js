@@ -14,7 +14,7 @@ export default function Sessao7({ refSessao7, corFundo, corTexto }) {
 
             <div className={Styles.section__inner}>
                 <div className={Styles.block}>
-                    <a className={Styles.pre} ><span>#5</span>Entre em contato comigo</a>
+                    <a className={Styles.pre} ><span>#6</span>Entre em contato comigo</a>
                     <h2>
                         Para me contatar, envie um e-mail para:<br />
                         <span className={Styles.spanContatoEmail}><a href='mailto:junioranheu@gmail.com'>junioranheu@gmail.com</a></span>

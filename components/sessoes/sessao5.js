@@ -16,7 +16,7 @@ export default function Sessao5({ refSessao5, corFundo, corTexto }) {
 
             <div className={Styles.section__inner100}>
                 <div className={Styles.block}>
-                    <a className={Styles.pre}><span>#4</span>Projetos pessoais</a>
+                    <a className={Styles.pre}><span>#5</span>Projetos pessoais</a>
                     <h2 className={Styles.link}>
                         <a href={urlProjeto} target='_blank' rel='noreferrer' className={Styles.link}>Projeto #1 — Spotify</a>
                     </h2>
