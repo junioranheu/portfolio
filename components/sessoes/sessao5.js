@@ -22,7 +22,7 @@ export default function Sessao5({ refSessao5, corFundo, corTexto }) {
                     </h2>
 
                     <p className={Styles.lead}>
-                        Um clone do Spotify. 🎶<br />
+                        Um clone fiel do Spotify. 🎶<br />
                         Desenvolvido para praticar React.js, Next.js, .NET no back-end, API Rest, JWT token, e etc.<br />
                         O mais legal é que o player realmente funciona!
                     </p>

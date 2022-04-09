@@ -22,7 +22,7 @@ export default function Index() {
     const refSessao7 = useRef(null);
 
     function handleScroll(ref) {
-        ref.current.scrollIntoView({ block: 'center', behavior: 'smooth' })
+        ref.current.scrollIntoView({ block: 'start', behavior: 'smooth' })
     }
 
     return (
@@ -52,10 +52,10 @@ export default function Index() {
             <Sessao4 refSessao4={refSessao4} corFundo={'#343436'} corTexto={'#FFF'} />
 
             {/* Projeto 1 */}
-            <Sessao5 refSessao5={refSessao5} corFundo={'#3A99D8'} corTexto={'#FFF'} />
+            <Sessao5 refSessao5={refSessao5} corFundo={'#1EB955'} corTexto={'#FFF'} />
 
             {/* Projeto 2 */}
-            <Sessao6 corFundo={'orange'} corTexto={'#FFF'} />
+            <Sessao6 corFundo={'#C873E6'} corTexto={'#FFF'} />
 
             {/* Contato */}
             <Sessao7 refSessao7={refSessao7} corFundo={'#FFF'} />

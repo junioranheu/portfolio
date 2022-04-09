@@ -25,7 +25,7 @@ export default function Sessao6({ corFundo, corTexto }) {
                     <p className={Styles.lead}>
                         Clonagem da ferramenta Framer.<br />
                         Desenvolvido para, também, praticar React.js e Next.js.<br />
-                        Plataforma com múltiplas páginas, layouts diferentes e 100% responsivo. 🤓
+                        Plataforma com múltiplas páginas, layouts diferentes e 100% responsivo. 
                     </p>
 
                     <Carousel imgs={[Framer1, Framer2, Framer3, Framer4, Framer5]} url={urlProjeto} />
