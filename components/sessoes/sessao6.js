@@ -1,21 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Framer1 from '../../static/images/projetos/framer1.webp';
+import Framer2 from '../../static/images/projetos/framer2.webp';
+import Framer3 from '../../static/images/projetos/framer3.webp';
+import Framer4 from '../../static/images/projetos/framer4.webp';
+import Framer5 from '../../static/images/projetos/framer5.webp';
 import Styles from '../../styles/index.module.css';
+import Carousel from '../outros/carousel';
 
 export default function Sessao6({ corFundo, corTexto }) {
+    const [urlProjeto] = useState('https://framer-anheu.vercel.app/');
+
     return (
         <section className={Styles.section} style={{ backgroundColor: corFundo, color: corTexto }}>
-            <div className={Styles.section__inner}>
-                <div className={Styles.block}>
-                    <h2>Projeto #2</h2>
-                    <p className={Styles.lead}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
-                </div>
-            </div> 
-
-            <svg className={`${Styles.bottom} ${Styles.svgEnfeite}`} xmlns='http://www.w3.org/2000/svg' version='1.1' width='100%' height='100' viewBox='0 0 100 102' preserveAspectRatio='none'>
-                <path fill={corFundo} d='M0 0 L50 100 L100 0 Z'></path>
+            <svg className={Styles.svgEnfeite} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'>
+                <polygon fill={corFundo} points='100 0 100 10 0 10' />
             </svg>
+
+            <div className={Styles.section__inner100}>
+                <div className={Styles.block}>
+                    <h2 className={Styles.link}>
+                        <a href={urlProjeto} target='_blank' rel='noreferrer' className={Styles.link}>Projeto #2 — Framer</a>
+                    </h2>
+
+                    <p className={Styles.lead}>
+                        Clonagem da ferramenta Framer.<br />
+                        Desenvolvido para, também, praticar React.js e Next.js.<br />
+                        Plataforma com múltiplas páginas, layouts diferentes e 100% responsivo. 🤓
+                    </p>
+
+                    <Carousel imgs={[Framer1, Framer2, Framer3, Framer4, Framer5]} url={urlProjeto} />
+                </div>
+            </div>
         </section>
     )
 }
