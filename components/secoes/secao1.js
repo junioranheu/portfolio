@@ -13,7 +13,7 @@ export default function Secao1(props) {
                     <ul className={Styles.anchornav}>
                         <li><span onClick={() => props.handleScroll(props.refSessao2)}>Sobre <span>#2 Quem sou eu?</span></span></li>
                         <li><span onClick={() => props.handleScroll(props.refSessao3)}>Skills <span>#2 Minhas habilidades</span></span></li>
-                        <li><span onClick={() => props.handleScroll(props.refSessao4)}>Carreira <span>#3 Onde trabalhei</span></span></li>
+                        <li><span onClick={() => props.handleScroll(props.refSessao4)}>Carreira <span>#3 Minha carreira</span></span></li>
                         <li><span onClick={() => props.handleScroll(props.refSessao5)}>Projetos <span>#4 Projetos pessoais</span></span></li>
                         <li><span onClick={() => props.handleScroll(props.refSessao7)}>Contato <span>#5 Me escreva uma mensagem</span></span></li>
                     </ul>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Styles from '../../styles/index.module.css';
+import Timeline from '../timeline/timeline';
 
 export default function Secao4({ refSessao4, corFundo, corTexto }) {
     return (
@@ -11,8 +12,9 @@ export default function Secao4({ refSessao4, corFundo, corTexto }) {
             <div className={Styles.section__inner}>
                 <div className={Styles.block}>
                     <a className={Styles.pre}><span>#3</span>Carreira</a>
-                    <h2>bla bla bla</h2>
-                    <p className={Styles.lead}>bla bla bla</p>
+                    <h2>Minha carreira</h2>
+
+                    <Timeline />
                 </div>
             </div>
         </section>

@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect, useRef } from 'react';
+import Sidebar from '../components/outros/sidebar';
 import Secao1 from '../components/secoes/secao1';
 import Secao2 from '../components/secoes/secao2';
 import Secao3 from '../components/secoes/secao3';
@@ -6,7 +7,6 @@ import Secao4 from '../components/secoes/secao4';
 import Secao5 from '../components/secoes/secao5';
 import Secao6 from '../components/secoes/secao6';
 import Secao7 from '../components/secoes/secao7';
-import Sidebar from '../components/sidebar';
 
 export default function Index() {
 
