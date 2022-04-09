@@ -16,7 +16,7 @@ export default function Sessao7({ refSessao7, corFundo, corTexto }) {
                     <a className={Styles.pre} ><span>#5</span>Entre em contato comigo</a>
                     <h2>
                         Para me contatar, envie um e-mail para:<br />
-                        <span><a href='mailto:junioranheu@gmail.com'>junioranheu@gmail.com</a></span>
+                        <span className={Styles.spanContatoEmail}><a href='mailto:junioranheu@gmail.com'>junioranheu@gmail.com</a></span>
                     </h2>
 
                     <p className={Styles.lead}>

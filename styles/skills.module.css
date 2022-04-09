@@ -2,7 +2,8 @@
 .browser {
     /* background-color: pink !important; */
     align-self: center;
-    width: 650px;
+    /* width: 650px; */
+    width: 80%;
     height: 420px;
 
     border-left: 1px solid #fff;
@@ -12,12 +13,26 @@
     border-radius: 6px;
     background: #fff;
     box-shadow: 0 0 20px 3px rgba(32, 35, 42, 0.14);
-    margin: 1em 0 0em;
+    margin: 1.5em 0 0em;
     overflow-y: auto;
 }
 
 .browser::-webkit-scrollbar {
     width: 5px;
+}
+
+.browser::-webkit-scrollbar-thumb {
+    background: #DE5F5F;
+    border-radius: 10px;
+}
+
+.browser::-webkit-scrollbar-thumb:hover {
+    background: #a83636;
+}
+
+.browser::-webkit-scrollbar-track {
+    margin-top: 33px;
+    margin-bottom: 33px;
 }
 
 /* ~ Browser Bar ~ */
@@ -123,4 +138,69 @@
 .stars i:hover {
     transform: scale(1.2);
     transition: transform .4s ease;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */
+/* hi-res laptops and desktops */
+@media (max-width:1281px) {
+    .browser {
+        /* background-color: pink !important; */
+        width: 90vw;
+    }
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (max-width:1025px) {}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (max-width:801px) {
+    .browser {
+        /* background-color: pink !important; */
+        width: 83vw;
+    }
+
+    .row>p:nth-child(2) span {
+        /* background-color: red; */
+        /* display: none; */
+        font-size: 10px;
+    }
+
+    .stars {
+        /* background-color: pink; */
+        max-width: 250px;
+    }
+
+    .stars i {
+        font-size: 15px;
+    }
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (max-width:600px) {
+    .browser {
+        /* background-color: pink !important; */
+        width: 75vw;
+    }
+
+    .row>p:nth-child(2) {
+        /* background-color: red; */
+        display: none;
+    }
+
+    .stars {
+        /* background-color: pink; */
+        max-width: 220px;
+    }
+
+    .stars i {
+        font-size: 12px;
+    }
+}
+
+/* smartphones, Android phones, landscape iPhone */
+@media (max-width:480px) {
+    .stars {
+        /* background-color: pink; */
+        max-width: 160px;
+    }
 }

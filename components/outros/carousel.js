@@ -8,7 +8,7 @@ import Slide from './slide';
 export default function Carousel({ imgs, url }) {
     return (
         <Swiper className={Styles.carousel}
-            spaceBetween={0} slidesPerView={1} loop={true}
+            spaceBetween={0} slidesPerView={1} loop={true} centeredSlides={true} centeredSlidesBounds={true}
 
             breakpoints={{
                 1: {

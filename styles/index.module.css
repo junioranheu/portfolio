@@ -190,3 +190,44 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+/* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */
+/* hi-res laptops and desktops */
+@media (max-width:1281px) {}
+
+/* big landscape tablets, laptops, and desktops */
+@media (max-width:1025px) {}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (max-width:801px) {
+    .section .section__inner {
+        /* background-color: pink !important; */
+        max-width: 100%;
+    }
+
+    .section .section__inner100 .lead {
+        /* background-color: red; */
+        max-width: 100%;
+    }
+
+    .spanContatoEmail {
+        /* color: red; */
+        font-size: 2rem;
+    }
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (max-width:600px) {
+    .spanContatoEmail {
+        /* color: red; */
+        font-size: 1.5rem;
+    }
+}
+
+/* smartphones, Android phones, landscape iPhone */
+@media (max-width:480px) {
+    .spanContatoEmail {
+        /* color: red; */
+        font-size: 1rem;
+    }
+}

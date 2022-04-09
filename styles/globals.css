@@ -24,10 +24,21 @@ a {
     user-select: none
 }
 
+.main {
+    /* background-color: pink; */
+    width: 100vw;
+    height: 100vh;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    /* display: flex;
+    flex-direction: column; */
+}
+
 /* =-=-=-=-=-=-=-=-=-=-= Scroll =-=-=-=-=-=-=-=-=-=-= */
 ::-webkit-scrollbar {
     width: 10px;
-    height: 5px;
 }
 
 /* ::-webkit-scrollbar-track {
@@ -50,6 +61,10 @@ a {
 
 .swiper-button-next {
     color: #de5f5f !important;
+}
+
+.swiper-wrapper {
+    align-items: center;
 }
 
 /* =-=-=-=-=-=-=-=-=-=-= Tipografia =-=-=-=-=-=-=-=-=-=-= */
