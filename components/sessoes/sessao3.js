@@ -2,7 +2,7 @@ import React from 'react';
 import Styles from '../../styles/index.module.css';
 import Skills from '../skills/skills';
 
-export default function Secao3({ refSessao3, corFundo, corTexto }) {
+export default function Sessao3({ refSessao3, corFundo, corTexto }) {
     return (
         <section className={Styles.section} ref={refSessao3} style={{ backgroundColor: corFundo, color: corTexto }}>
             <svg className={Styles.svgEnfeite} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'>

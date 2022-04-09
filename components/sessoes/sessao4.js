@@ -2,7 +2,7 @@ import React from 'react';
 import Styles from '../../styles/index.module.css';
 import Timeline from '../timeline/timeline';
 
-export default function Secao4({ refSessao4, corFundo, corTexto }) {
+export default function Sessao4({ refSessao4, corFundo, corTexto }) {
     return (
         <section className={Styles.section} ref={refSessao4} style={{ backgroundColor: corFundo, color: corTexto }}>
             <svg className={Styles.svgEnfeite} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'>

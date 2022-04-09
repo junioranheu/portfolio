@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Styles from '../../styles/index.module.css';
 
-export default function Secao7({ refSessao7, corFundo, corTexto }) {
+export default function Sessao7({ refSessao7, corFundo, corTexto }) {
     const mensagem = ['um bom domingo', 'uma boa segunda-feira', 'uma boa terça-feira', 'uma boa quarta-feira', 'uma boa quinta-feira', 'uma boa sexta-feira', 'um bom sábado'];
     const [diaDaSemana] = useState(mensagem[new Date().getDay()]);
 

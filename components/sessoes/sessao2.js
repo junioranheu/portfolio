@@ -1,7 +1,7 @@
 import React from 'react';
 import Styles from '../../styles/index.module.css';
 
-export default function Secao2({ refSessao2, corFundo, corTexto }) {
+export default function Sessao2({ refSessao2, corFundo, corTexto }) {
     return (
         <section className={Styles.section} ref={refSessao2} style={{ backgroundColor: corFundo, color: corTexto }}>
             <div className={Styles.section__inner}>
@@ -26,7 +26,7 @@ export default function Secao2({ refSessao2, corFundo, corTexto }) {
                     </p>
 
                     <p className={Styles.lead}>
-                        Veja todos meus projetos no meu <a href='https://github.com/junioranheu' target='_blank' rel='noreferrer' className={Styles.link}>Github</a>,
+                        Veja todos meus projetos em meu <a href='https://github.com/junioranheu' target='_blank' rel='noreferrer' className={Styles.link}>Github</a>,
                         e o meu perfil no <a href='https://www.linkedin.com/in/junioranheu/' target='_blank' rel='noreferrer' className={Styles.link}>Linkedin</a>.
                     </p>
                 </div>

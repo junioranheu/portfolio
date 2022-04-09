@@ -1,9 +1,9 @@
 import React from 'react';
 import Styles from '../../styles/index.module.css';
 
-export default function Secao1(props) {
+export default function Sessao1(props) {
     return (
-        <section className={Styles.secao1} ref={props.refSessao1} style={{ backgroundColor: props.corFundo, color: props.corTexto }}>
+        <section className={Styles.sessao1} ref={props.refSessao1} style={{ backgroundColor: props.corFundo, color: props.corTexto }}>
             <div className={Styles.section__inner}>
                 <div className={Styles.block}>
                     <a className={Styles.pre}><span>#1</span>Olá</a>

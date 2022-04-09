@@ -14,7 +14,7 @@
 }
 
 /* =-=-=-=-=-=-=-=-=-=-= Primeira sessão =-=-=-=-=-=-=-=-=-=-= */
-.secao1 {
+.sessao1 {
     /* background-color: red !important; */
     display: flex;
     justify-content: center;
@@ -25,12 +25,12 @@
     padding: 20vh 50px 20vh 75px;
 }
 
-.secao1 h1 {
+.sessao1 h1 {
     /* color: red; */
     font-size: 3rem;
 }
 
-.secao1 h3 {
+.sessao1 h3 {
     /* color: blue; */
     font-size: 1.2rem;
 }
@@ -165,4 +165,26 @@
 
 .pre:hover {
     opacity: 1;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-= Imagem =-=-=-=-=-=-=-=-=-=-= */
+.section .section__inner100 {
+    /* background-color: pink; */
+    max-width: 100vw;
+    font-size: 0.75rem;
+}
+
+.section .section__inner100 .lead {
+    /* background-color: red; */
+    max-width: 50vw;
+}
+
+.divImagem {
+    /* background-color: pink; */
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.divImagem img {
+    border-radius: 10px;
 }
