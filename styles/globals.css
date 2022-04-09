@@ -43,6 +43,15 @@ a {
     background: #3d3b3b;
 }
 
+/* =-=-=-=-=-=-=-=-=-=-= Swipper button =-=-=-=-=-=-=-=-=-=-= */
+.swiper-button-prev {
+    color: #de5f5f !important;
+}
+
+.swiper-button-next {
+    color: #de5f5f !important;
+}
+
 /* =-=-=-=-=-=-=-=-=-=-= Tipografia =-=-=-=-=-=-=-=-=-=-= */
 h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
     font-weight: bold;

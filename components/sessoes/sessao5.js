@@ -1,6 +1,12 @@
-import Image from 'next/image';
 import React from 'react';
+import { Navigation } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import Slide from '../../components/outros/slide';
 import Spotify1 from '../../static/images/projetos/spotify1.webp';
+import Spotify2 from '../../static/images/projetos/spotify2.webp';
+import Spotify3 from '../../static/images/projetos/spotify3.webp';
 import Styles from '../../styles/index.module.css';
 
 export default function Sessao5({ refSessao5, corFundo, corTexto }) {
@@ -13,18 +19,47 @@ export default function Sessao5({ refSessao5, corFundo, corTexto }) {
             <div className={Styles.section__inner100}>
                 <div className={Styles.block}>
                     <a className={Styles.pre}><span>#4</span>Projetos pessoais</a>
-                    <h2>Projeto #1 — Spotify</h2>
+                    <h2 className={Styles.link}>
+                        <a href='https://spotify-anheu.vercel.app/' target='_blank' rel='noreferrer' className={Styles.link}>Projeto #1 — Spotify</a>
+                    </h2>
 
                     <p className={Styles.lead}>
-                        Um clone do Spotify.<br/>
-                        Desenvolvido para praticar React.js, Next.js, .NET, API Rest, JWT token, e etc.<br/>
+                        Um clone do Spotify.<br />
+                        Desenvolvido para praticar React.js, Next.js, .NET, API Rest, JWT token, e etc.<br />
                     </p>
 
-                    <div className={Styles.divImagem}>
-                        <Image src={Spotify1} />
-                    </div>
+                    <Swiper className={Styles.carousel}
+                        spaceBetween={0} slidesPerView={1} loop={true}
+
+                        breakpoints={{
+                            1: {
+                                slidesPerView: 1,
+                            },
+                            600: {
+                                slidesPerView: 1,
+                            },
+                            801: {
+                                slidesPerView: 1,
+                            },
+                        }}
+
+                        modules={[Navigation]}
+                        navigation
+                    >
+                        <SwiperSlide>
+                            <Slide img={Spotify1} url='https://spotify-anheu.vercel.app/' />
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <Slide img={Spotify2} url='https://spotify-anheu.vercel.app/' />
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <Slide img={Spotify3} url='https://spotify-anheu.vercel.app/' />
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }

@@ -179,12 +179,20 @@
     max-width: 50vw;
 }
 
-.divImagem {
-    /* background-color: pink; */
-    width: 100%;
+/* =-=-=-=-=-=-=-=-=-=-= Carousel =-=-=-=-=-=-=-=-=-=-= */
+.carousel {
+    /* background-color: red; */
     margin-top: 1rem;
 }
 
-.divImagem img {
+.divImgCarousel {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgCarousel {
     border-radius: 10px;
+    cursor: pointer;
 }
