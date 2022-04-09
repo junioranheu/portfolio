@@ -1,4 +1,2 @@
 --
-Melhorar responsivdade
-Criar animações on scroll 
 Traduzir pra ingles

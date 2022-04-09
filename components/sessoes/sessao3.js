@@ -12,14 +12,16 @@ export default function Sessao3({ refSessao3, corFundo, corTexto }) {
             <div className={Styles.section__inner}>
                 <div className={Styles.block}>
                     <a className={Styles.pre}><span>#2</span>Skills</a>
+
                     <h2>Conhecimentos e habilidades.</h2>
+
                     <p className={Styles.lead}>
                         Com {(new Date().getFullYear() - 2017)} anos de carreira, acredito veemente — e, ainda, humildemente 😎 —
                         que estes sejam os meus níveis atuais nas linguagens, frameworks, etc., abaixo.
                     </p>
-                </div>
 
-                <Skills />
+                    <Skills />
+                </div>
             </div>
         </section>
     )

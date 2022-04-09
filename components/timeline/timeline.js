@@ -9,7 +9,6 @@ export default function Timeline() {
                 tempo='Maio de 2017 — Fevereiro de 2018'
                 titulo='Estagiário de desenvolvimento de software — Apolo Tubulars'
             />
-
             <Acontecimento
                 tempo='Fevereiro de 2018 — Maio de 2021'
                 titulo='Assistente de desenvolvimento de software — Apolo Tubulars'

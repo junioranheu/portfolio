@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Bounce, Fade } from 'react-awesome-reveal';
 import Styles from '../../styles/index.module.css';
 
 export default function Sessao7({ refSessao7, corFundo, corTexto }) {
@@ -19,22 +20,30 @@ export default function Sessao7({ refSessao7, corFundo, corTexto }) {
                         <span className={Styles.spanContatoEmail}><a href='mailto:junioranheu@gmail.com'>junioranheu@gmail.com</a></span>
                     </h2>
 
-                    <p className={Styles.lead}>
-                        Outros links para contato:<br />
-                        <a href='https://www.linkedin.com/in/junioranheu/' target='_blank' rel='noreferrer'>Linkedin</a>,&nbsp;
-                        <a href='https://www.instagram.com/junioranheu/' target='_blank' rel='noreferrer'>Instagram</a> e&nbsp;
-                        <a href='https://www.facebook.com/JuniorAnheu' target='_blank' rel='noreferrer'>Facebook</a>.
-                    </p>
+                    <Fade triggerOnce cascade>
+                        <p className={Styles.lead}>
+                            Outros links para contato:<br />
+                            <a href='https://www.linkedin.com/in/junioranheu/' target='_blank' rel='noreferrer'>Linkedin</a>,&nbsp;
+                            <a href='https://www.instagram.com/junioranheu/' target='_blank' rel='noreferrer'>Instagram</a> e&nbsp;
+                            <a href='https://www.facebook.com/JuniorAnheu' target='_blank' rel='noreferrer'>Facebook</a>.
+                        </p>
 
-                    <br />
-                    <p className={Styles.lead}>
-                        Veja todos meus projetos pessoais em meu <a href='https://github.com/junioranheu' target='_blank' rel='noreferrer'>Github</a>.
-                    </p>
+                        <br />
+                        <p className={Styles.lead}>
+                            Veja todos meus projetos pessoais em meu <a href='https://github.com/junioranheu' target='_blank' rel='noreferrer'>Github</a>.
+                        </p>
 
-                    <br />
-                    <p className={Styles.lead}>
-                        Obrigado por chegar até aqui.<br />Tenha {diaDaSemana} :)
-                    </p>
+                        <br />
+                        <p className={Styles.lead}>
+                            Obrigado por chegar até aqui.
+                        </p>
+                    </Fade>
+
+                    <Bounce triggerOnce direction='right' delay={3000}>
+                        <p className={Styles.lead}>
+                            Tenha {diaDaSemana} :)
+                        </p>
+                    </Bounce>
                 </div>
             </div>
         </section>
