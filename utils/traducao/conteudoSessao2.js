@@ -10,7 +10,7 @@ function conteudoSessao2(idioma) {
             'Lorena, São Paulo.',
             'Brasil.',
             'Iniciei minha carreira como dev em 2017. Atualmente trabalho no IPPLAN — Instituto de Pesquisa e Planejamento de São José dos Campos.',
-            'Adoro programar e, também, dispertar o gosto para a programação em outras pessoas.',
+            'Adoro programar e, também, despertar o gosto para a programação em outras pessoas.',
             'Veja todos meus projetos em meu <a href="https://github.com/junioranheu" target="_blank" rel="noreferrer" className={Styles.link}>Github</a>, e o meu perfil no <a href="https://www.linkedin.com/in/junioranheu/" target="_blank" rel="noreferrer" className={Styles.link}>Linkedin</a>.'
         ];
     } else {
