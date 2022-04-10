@@ -1,4 +1,4 @@
-function conteudoSessao4(idioma) {
+function conteudoSessao5(idioma) {
     let conteudo;
 
     if (idioma === '1' || idioma === 1) {
@@ -15,11 +15,11 @@ function conteudoSessao4(idioma) {
             'Project #1 — Spotify',
             'A identical Spotify clone. 🎶',
             'This project has been developed to practice React.js, Next.js, .NET, Rest API, JWT token, etc.',
-            'What\'s so great about that is you can really listen to music!'
+            'What\'s so great about that is you can really listen to real music!'
         ];
     }
 
     return conteudo;
 }
 
-export default conteudoSessao4;
+export default conteudoSessao5;

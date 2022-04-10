@@ -1,10 +1,24 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Bounce, Fade } from 'react-awesome-reveal';
 import Styles from '../../styles/index.module.css';
+import { IdiomaContext } from '../../utils/context/idiomaContext';
+import ConteudoSessao7 from '../../utils/traducao/conteudoSessao7';
 
 export default function Sessao7({ refSessao7, corFundo, corTexto }) {
-    const mensagem = ['um ótimo domingo', 'uma ótima segunda-feira', 'uma ótima terça-feira', 'uma ótima quarta-feira', 'uma ótima quinta-feira', 'uma ótima sexta-feira', 'um ótimo sábado'];
-    const [diaDaSemana] = useState(mensagem[new Date().getDay()]);
+    const mensagemBr = ['um ótimo domingo', 'uma ótima segunda-feira', 'uma ótima terça-feira', 'uma ótima quarta-feira', 'uma ótima quinta-feira', 'uma ótima sexta-feira', 'um ótimo sábado'];
+    const mensagemEn = ['a great sunday', 'a great monday', 'a great tuesday', 'a great wednesday', 'a great thurday', 'a great friday', 'a great saturday'];
+    const [diaDaSemana, setDiaDaSemana] = useState(null);
+
+    const [idiomaContext] = useContext(IdiomaContext);
+    const [conteudo, setConteudo] = useState(ConteudoSessao7(idiomaContext));
+
+    useEffect(() => {
+        // console.log(idiomaContext);
+        setConteudo(ConteudoSessao7(idiomaContext));
+
+        // Definir a mensagem do dia da semana;
+        setDiaDaSemana((idiomaContext === 1 || idiomaContext === '1' ? mensagemBr[new Date().getDay()] : mensagemEn[new Date().getDay()]));
+    }, [idiomaContext]);
 
     return (
         <section className={Styles.section} ref={refSessao7} style={{ backgroundColor: corFundo, color: corTexto }}>
@@ -14,34 +28,34 @@ export default function Sessao7({ refSessao7, corFundo, corTexto }) {
 
             <div className={Styles.section__inner}>
                 <div className={Styles.block}>
-                    <a className={Styles.pre} ><span>#6</span>Entre em contato comigo</a>
+                    <a className={Styles.pre} ><span>#6</span>{conteudo[0]}</a>
                     <h2>
-                        Para me contatar, envie um e-mail para:<br />
+                        {conteudo[1]}<br />
                         <span className={Styles.spanContatoEmail}><a href='mailto:junioranheu@gmail.com'>junioranheu@gmail.com</a></span>
                     </h2>
 
                     <Fade triggerOnce cascade>
                         <p className={Styles.lead}>
-                            Outros links para contato:<br />
+                            {conteudo[2]}<br />
                             <a href='https://www.linkedin.com/in/junioranheu/' target='_blank' rel='noreferrer'>Linkedin</a>,&nbsp;
-                            <a href='https://www.instagram.com/junioranheu/' target='_blank' rel='noreferrer'>Instagram</a> e&nbsp;
+                            <a href='https://www.instagram.com/junioranheu/' target='_blank' rel='noreferrer'>Instagram</a>{conteudo[3]}&nbsp;
                             <a href='https://www.facebook.com/JuniorAnheu' target='_blank' rel='noreferrer'>Facebook</a>.
                         </p>
 
                         <br />
                         <p className={Styles.lead}>
-                            Veja todos meus projetos pessoais em meu <a href='https://github.com/junioranheu' target='_blank' rel='noreferrer'>Github</a>.
+                            {conteudo[4]} <a href='https://github.com/junioranheu' target='_blank' rel='noreferrer'>Github</a>.
                         </p>
 
                         <br />
                         <p className={Styles.lead}>
-                            Obrigado por chegar até aqui.
+                            {conteudo[5]}
                         </p>
                     </Fade>
 
                     <Bounce triggerOnce direction='right' delay={3000}>
                         <p className={Styles.lead}>
-                            Tenha {diaDaSemana} :)
+                            {conteudo[6]} {diaDaSemana} :)
                         </p>
                     </Bounce>
                 </div>
