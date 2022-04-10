@@ -8,7 +8,7 @@ function conteudoTimeline(idioma) {
             'Fevereiro de 2018 — Maio de 2021',
             'Assistente de desenvolvimento de software — Apolo Tubulars',
             'Maio de 2021 — Presente',
-            'Analista de desenvolvimento fullstack pleno, .NET — Intituto de Pesquisa e Planejamento de São José dos Campos'
+            'Analista de desenvolvimento fullstack pleno, .NET — Instituto de Pesquisa e Planejamento de São José dos Campos'
         ];
     } else {
         conteudo = [

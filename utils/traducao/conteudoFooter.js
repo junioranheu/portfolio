@@ -3,11 +3,11 @@ function conteudoFooter(idioma) {
 
     if (idioma === '1' || idioma === 1 || idioma === null) {
         conteudo = [
-            'Feito por junioranheu'
+            'feito por junioranheu'
         ];
     } else {
         conteudo = [
-            'Made by junioranheu'
+            'made by junioranheu'
         ];
     }
 
