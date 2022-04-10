@@ -1,9 +1,4 @@
 --
-Traduzir pra ingles
-Criar uma opção de escolher o idiomar na navbar esquerda
-criar context
-traduzir todas as sessoes
 Colocar um gif no ola
-Modificar cursor: bolinha seguindo igual em https://studio081.me/
 Ajustar o botaozinho de passar pra no carousel
 Criar um "feito por" no footer
