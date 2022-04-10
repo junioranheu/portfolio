@@ -33,7 +33,6 @@ function conteudoSessao1(idioma) {
             'Get in touch',
             '#6 Message me'
         ];
-
     }
 
     return conteudo;
