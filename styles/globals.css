@@ -56,16 +56,23 @@ a {
 }
 
 /* =-=-=-=-=-=-=-=-=-=-= Swipper button =-=-=-=-=-=-=-=-=-=-= */
-.swiper-button-prev {
-    color: #de5f5f !important;
-}
-
-.swiper-button-next {
-    color: #de5f5f !important;
-}
-
 .swiper-wrapper {
     align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 30px;
+    color: #000 !important;
+    fill: black !important;
+    stroke: black !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 /* =-=-=-=-=-=-=-=-=-=-= Tipografia =-=-=-=-=-=-=-=-=-=-= */

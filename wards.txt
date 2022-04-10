@@ -1,4 +1,3 @@
 --
 Colocar um gif no ola
-Ajustar o botaozinho de passar pra no carousel
 Criar um "feito por" no footer
