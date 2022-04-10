@@ -1,7 +1,7 @@
 function conteudoSessao5(idioma) {
     let conteudo;
 
-    if (idioma === '1' || idioma === 1) {
+    if (idioma === '1' || idioma === 1 || idioma === null) {
         conteudo = [
             'Projetos pessoais',
             'Projeto #1 — Spotify',

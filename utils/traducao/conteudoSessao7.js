@@ -1,7 +1,7 @@
 function conteudoSessao7(idioma) {
     let conteudo;
 
-    if (idioma === '1' || idioma === 1) {
+    if (idioma === '1' || idioma === 1 || idioma === null) {
         conteudo = [
             'Entre em contato comigo',
             'Para me contatar, envie um e-mail para:',

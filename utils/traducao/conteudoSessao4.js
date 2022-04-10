@@ -1,7 +1,7 @@
 function conteudoSessao4(idioma) {
     let conteudo;
 
-    if (idioma === '1' || idioma === 1) {
+    if (idioma === '1' || idioma === 1 || idioma === null) {
         conteudo = [
             'Carreira',
             'Minha carreira'

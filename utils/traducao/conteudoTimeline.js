@@ -1,7 +1,7 @@
 function conteudoTimeline(idioma) {
     let conteudo;
 
-    if (idioma === '1' || idioma === 1) {
+    if (idioma === '1' || idioma === 1 || idioma === null) {
         conteudo = [
             'Maio de 2017 — Fevereiro de 2018',
             'Estagiário de desenvolvimento de software — Apolo Tubulars',

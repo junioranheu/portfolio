@@ -1,7 +1,7 @@
 function conteudoSessao6(idioma) {
     let conteudo;
 
-    if (idioma === '1' || idioma === 1) {
+    if (idioma === '1' || idioma === 1 || idioma === null) {
         conteudo = [
             'Projeto #2 — Framer',
             'Clonagem da ferramenta Framer.',
