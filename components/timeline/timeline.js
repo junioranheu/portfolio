@@ -16,7 +16,7 @@ export default function Timeline() {
 
             <Acontecimento
                 tempo='Maio de 2021 — Presente'
-                titulo='Analista de desenvolvimento fullstack, .NET — Intituto de Pesquisa e Planejamento de São José dos Campos'
+                titulo='Analista de desenvolvimento fullstack pleno, .NET — Intituto de Pesquisa e Planejamento de São José dos Campos'
             />
 
             <li className={`${Styles.timelineItem} ${Styles.period}`}>

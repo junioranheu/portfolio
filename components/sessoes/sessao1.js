@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Bounce, Fade } from 'react-awesome-reveal';
 import Styles from '../../styles/index.module.css';
-import Conteudo from '../../utils/traducao/sessao1';
+import { IdiomaContext } from '../../utils/context/idiomaContext';
+import ConteudoSessao1 from '../../utils/traducao/conteudoSessao1';
 
 export default function Sessao1(props) {
-    const [conteudo] = useState(Conteudo());
+    const [idiomaContext] = useContext(IdiomaContext);
+    const [conteudo, setConteudo] = useState(ConteudoSessao1(idiomaContext));
 
     useEffect(() => {
-        console.log(conteudo);
-    }, [conteudo]);
+        // console.log(idiomaContext);
+        setConteudo(ConteudoSessao1(idiomaContext));
+    }, [idiomaContext]);
 
     return (
         <section className={Styles.sessao1} ref={props.refSessao1} style={{ backgroundColor: props.corFundo, color: props.corTexto }}>

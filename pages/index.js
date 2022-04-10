@@ -9,7 +9,7 @@ import Sessao6 from '../components/sessoes/sessao6';
 import Sessao7 from '../components/sessoes/sessao7';
 
 export default function Index() {
-
+    
     useEffect(() => {
         document.title = 'Portifólio — @junioranheu';
     }, []);
