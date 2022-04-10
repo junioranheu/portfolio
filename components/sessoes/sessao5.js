@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Spotify1 from '../../static/images/projetos/spotify1.webp';
 import Spotify2 from '../../static/images/projetos/spotify2.webp';
+import Spotify3 from '../../static/images/projetos/spotify3.webp';
 import Styles from '../../styles/index.module.css';
 import { IdiomaContext } from '../../utils/context/idiomaContext';
 import ConteudoSessao5 from '../../utils/traducao/conteudoSessao5';
@@ -36,7 +37,7 @@ export default function Sessao5({ refSessao5, corFundo, corTexto }) {
                         {conteudo[4]}
                     </p>
 
-                    <Carousel imgs={[Spotify1, Spotify2]} url={urlProjeto} />
+                    <Carousel imgs={[Spotify1, Spotify2, Spotify3]} url={urlProjeto} />
                 </div>
             </div>
         </section >
