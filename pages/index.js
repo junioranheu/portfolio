@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect, useRef } from 'react';
-import Sidebar from '../components/outros/sidebar';
 import Sessao1 from '../components/sessoes/sessao1';
 import Sessao2 from '../components/sessoes/sessao2';
 import Sessao3 from '../components/sessoes/sessao3';
@@ -27,8 +26,6 @@ export default function Index() {
 
     return (
         <Fragment>
-            <Sidebar />
-
             {/* Olá */}
             <Sessao1
                 refSessao1={refSessao1}

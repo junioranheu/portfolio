@@ -7,7 +7,7 @@ function conteudoSessao7(idioma) {
             'Para me contatar, envie um e-mail para:',
             'Outros links para contato:',
             ' e',
-            'Veja todos meus projetos pessoais em meu',
+            'Veja todos meus projetos pessoais em meu ',
             'Obrigado por chegar até aqui.',
             'Tenha'
         ];

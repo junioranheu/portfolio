@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import AnimatedCursor from 'react-animated-cursor';
+import Footer from '../components/outros/footer';
+import Sidebar from '../components/outros/sidebar';
 import '../fonts/GTWalsheim.css';
+import '../fonts/NanumPenScript.css';
 import '../styles/globals.css';
 import { IdiomaProvider } from '../utils/context/idiomaContext';
 
@@ -27,7 +30,9 @@ export default function App({ Component, pageProps }) {
             />
 
             <section className='main semHighlight'>
+                <Sidebar />
                 <Component {...pageProps} />
+                <Footer />
             </section>
         </IdiomaProvider>
     )
