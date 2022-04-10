@@ -1,3 +1,2 @@
 --
 Colocar um gif no ola
-Ajustar responsividade dos prints
