@@ -36,12 +36,12 @@ export default function Skills() {
                 <SkillRow Icone={faCode} item='JQuery' qtdEstrelas={8} cor={'#0865A6'} />
                 <SkillRow Icone={faBootstrap} item='Bootstrap' qtdEstrelas={6} cor={'#6C10ED'} />
                 <SkillRow Icone={faCode} item='Bulma.css' qtdEstrelas={8} cor={'#00D1B2'} />
-                
+
                 <SkillRow Icone={faGitAlt} item='Git' qtdEstrelas={5} cor={'#E94E31'} />
 
-                <SkillRow Icone={faLanguage} item={(idiomaContext === 1 || idiomaContext === '1' ? 'Português' : 'Portuguese')} qtdEstrelas={10} cor={'#58585c'} />
-                <SkillRow Icone={faLanguage} item={(idiomaContext === 1 || idiomaContext === '1' ? 'Inglês' : 'English')} qtdEstrelas={9} cor={'#58585c'} />
-                <SkillRow Icone={faLanguage} item={(idiomaContext === 1 || idiomaContext === '1' ? 'Espanhol' : 'Spanish')} qtdEstrelas={6} cor={'#58585c'} />
+                <SkillRow Icone={faLanguage} item={(idiomaContext === 1 || idiomaContext === '1' || idiomaContext === null ? 'Português' : 'Portuguese')} qtdEstrelas={10} cor={'#58585c'} />
+                <SkillRow Icone={faLanguage} item={(idiomaContext === 1 || idiomaContext === '1' || idiomaContext === null ? 'Inglês' : 'English')} qtdEstrelas={9} cor={'#58585c'} />
+                <SkillRow Icone={faLanguage} item={(idiomaContext === 1 || idiomaContext === '1' || idiomaContext === null ? 'Espanhol' : 'Spanish')} qtdEstrelas={6} cor={'#58585c'} />
             </div>
         </div>
     )
