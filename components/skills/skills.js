@@ -1,11 +1,14 @@
 import { faAngular, faBootstrap, faCss3Alt, faGitAlt, faHtml5, faJsSquare, faPhp, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faDatabase, faLanguage } from '@fortawesome/free-solid-svg-icons';
-import React from 'react';
+import React, { useContext } from 'react';
 import Styles from '../../styles/skills.module.css';
+import { IdiomaContext } from '../../utils/context/idiomaContext';
 import SkillRow from './skillRow';
 
 // https://codepen.io/SAM-O10/pen/JxOeVj
 export default function Skills() {
+    const [idiomaContext] = useContext(IdiomaContext);
+
     return (
         <div className={Styles.browser}>
             <div className={Styles.browserBar}>
@@ -36,9 +39,9 @@ export default function Skills() {
                 
                 <SkillRow Icone={faGitAlt} item='Git' qtdEstrelas={5} cor={'#E94E31'} />
 
-                <SkillRow Icone={faLanguage} item='Português' qtdEstrelas={10} cor={'#58585c'} />
-                <SkillRow Icone={faLanguage} item='Inglês' qtdEstrelas={9} cor={'#58585c'} />
-                <SkillRow Icone={faLanguage} item='Espanhol' qtdEstrelas={6} cor={'#58585c'} />
+                <SkillRow Icone={faLanguage} item={(idiomaContext === 1 || idiomaContext === '1' ? 'Português' : 'Portuguese')} qtdEstrelas={10} cor={'#58585c'} />
+                <SkillRow Icone={faLanguage} item={(idiomaContext === 1 || idiomaContext === '1' ? 'Inglês' : 'English')} qtdEstrelas={9} cor={'#58585c'} />
+                <SkillRow Icone={faLanguage} item={(idiomaContext === 1 || idiomaContext === '1' ? 'Espanhol' : 'Spanish')} qtdEstrelas={6} cor={'#58585c'} />
             </div>
         </div>
     )

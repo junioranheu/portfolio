@@ -22,7 +22,7 @@ export default function Sessao2({ refSessao2, corFundo, corTexto }) {
                     <Fade triggerOnce>
                         <h1>
                             {conteudo[1]}<br />
-                            {(new Date().getFullYear() - 1997)} {conteudo[2]}<br />
+                            {conteudo[2]}<br />
                             {conteudo[3]}<br />
                             {conteudo[4]}<br />
                             {conteudo[5]}

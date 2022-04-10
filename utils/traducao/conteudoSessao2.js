@@ -5,7 +5,7 @@ function conteudoSessao2(idioma) {
         conteudo = [
             'Sobre',
             'Me chamo Junior.',
-            'anos.',
+            (new Date().getFullYear() - 1997) + ' anos.',
             'Dev .NET fullstack.',
             'Lorena, São Paulo.',
             'Brasil.',
@@ -17,7 +17,7 @@ function conteudoSessao2(idioma) {
         conteudo = [
             'About me',
             'I\'m Junior.',
-            'yo.',
+            (new Date().getFullYear() - 1997) + ' yo.',
             '.NET fullstack dev.',
             'Lorena, São Paulo.',
             'Brazil.',
