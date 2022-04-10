@@ -13,7 +13,7 @@ function conteudoSessao5(idioma) {
         conteudo = [
             'Personal projects',
             'Project #1 — Spotify',
-            'A identical Spotify clone. 🎶',
+            'An identical Spotify clone. 🎶',
             'This project has been developed to practice React.js, Next.js, .NET, Rest API, JWT token, etc.',
             'What\'s so great about that is you can really listen to real music!'
         ];
