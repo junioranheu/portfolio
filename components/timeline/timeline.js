@@ -1,22 +1,32 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Styles from '../../styles/timeline.module.css';
+import { IdiomaContext } from '../../utils/context/idiomaContext';
+import ConteudoTimeline from '../../utils/traducao/conteudoTimeline';
 import Acontecimento from './acontecimento';
 
 export default function Timeline() {
+    const [idiomaContext] = useContext(IdiomaContext);
+    const [conteudo, setConteudo] = useState(ConteudoTimeline(idiomaContext));
+
+    useEffect(() => {
+        // console.log(idiomaContext);
+        setConteudo(ConteudoTimeline(idiomaContext));
+    }, [idiomaContext]);
+
     return (
         <ul className={Styles.timeline}>
             <Acontecimento
-                tempo='Maio de 2017 — Fevereiro de 2018'
-                titulo='Estagiário de desenvolvimento de software — Apolo Tubulars'
+                tempo={conteudo[0]}
+                titulo={conteudo[1]}
             />
             <Acontecimento
-                tempo='Fevereiro de 2018 — Maio de 2021'
-                titulo='Assistente de desenvolvimento de software — Apolo Tubulars'
+                tempo={conteudo[2]}
+                titulo={conteudo[3]}
             />
 
             <Acontecimento
-                tempo='Maio de 2021 — Presente'
-                titulo='Analista de desenvolvimento fullstack pleno, .NET — Intituto de Pesquisa e Planejamento de São José dos Campos'
+                tempo={conteudo[4]}
+                titulo={conteudo[5]}
             />
 
             <li className={`${Styles.timelineItem} ${Styles.period}`}>
