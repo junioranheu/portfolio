@@ -13,7 +13,7 @@ export default function Index() {
 
     useEffect(() => {
         if (idiomaContext === '1' || idiomaContext === 1 || idiomaContext === null) {
-            document.title = 'Portifólio — @junioranheu';
+            document.title = 'Portfólio — @junioranheu';
         } else if (idiomaContext === '2' || idiomaContext === 2) {
             document.title = 'Portfolio — @junioranheu';
         } else if (idiomaContext === '3' || idiomaContext === 3) {
