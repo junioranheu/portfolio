@@ -26,7 +26,7 @@ function conteudoTimeline(idioma) {
             'Febrero del 2018 — Mayo 2021',
             'Asistente desarrollador — Apolo Tubulars',
             'Mayo del 2021 — Hoy',
-            'Desarrollador fullstack .NET — IPPLAN - Instituto de Investigación y Planificación de São José dos Campos.'
+            'Desarrollador fullstack .NET — IPPLAN - Instituto de Investigación y Planificación de São José dos Campos'
         ];
     }
 
