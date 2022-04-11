@@ -22,7 +22,7 @@ function conteudoTimeline(idioma) {
     } else if (idioma === '3' || idioma === 3) {
         conteudo = [
             'Mayo del 2017 — Febrero del 2018',
-            'Desarrollador pasante — Apolo Tubulars',
+            'Practicante de programación — Apolo Tubulars',
             'Febrero del 2018 — Mayo 2021',
             'Asistente desarrollador — Apolo Tubulars',
             'Mayo del 2021 — Hoy',
