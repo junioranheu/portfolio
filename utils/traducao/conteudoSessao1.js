@@ -37,7 +37,7 @@ function conteudoSessao1(idioma) {
         conteudo = [
             'Hola',
             'Hola, ¿que tal? :)',
-            'Bienvenido a mi portafolio',
+            'Bienvenid@ a mi portafolio',
             'Sobre mi',
             '#2 ¿Quien soy?',
             'Skills',
