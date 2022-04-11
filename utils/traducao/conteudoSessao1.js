@@ -17,7 +17,7 @@ function conteudoSessao1(idioma) {
             'Contato',
             '#6 Me escreva uma mensagem'
         ];
-    } else {
+    } else if (idioma === '2' || idioma === 2) {
         conteudo = [
             'Hello',
             'Hey there :)',
@@ -32,6 +32,22 @@ function conteudoSessao1(idioma) {
             '#5 Personal projects',
             'Get in touch',
             '#6 Message me'
+        ];
+    } else if (idioma === '3' || idioma === 3) {
+        conteudo = [
+            'Hola',
+            'Hola, ¿que tal? :)',
+            'Bienvenido a mi portafolio',
+            'Sobre mi',
+            '#2 ¿Quien soy?',
+            'Skills',
+            '#3 Mis conocimientos',
+            'Carrera',
+            '#4 Mi carrera',
+            'Proyectos',
+            '#5 Proyectos personales',
+            'Contacto',
+            '#6 Ponte en contacto conmigo'
         ];
     }
 

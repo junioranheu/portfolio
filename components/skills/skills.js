@@ -1,6 +1,6 @@
 import { faAngular, faBootstrap, faCss3Alt, faGitAlt, faHtml5, faJsSquare, faPhp, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faDatabase, faLanguage } from '@fortawesome/free-solid-svg-icons';
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Styles from '../../styles/skills.module.css';
 import { IdiomaContext } from '../../utils/context/idiomaContext';
 import SkillRow from './skillRow';
@@ -8,6 +8,26 @@ import SkillRow from './skillRow';
 // https://codepen.io/SAM-O10/pen/JxOeVj
 export default function Skills() {
     const [idiomaContext] = useContext(IdiomaContext);
+
+    const [pt, setPt] = useState('');
+    const [en, setEn] = useState('');
+    const [esp, setEsp] = useState('');
+    useEffect(() => {
+        // console.log(idiomaContext);
+        if (idiomaContext === '1' || idiomaContext === 1 || idiomaContext === null) {
+            setPt('Português');
+            setEn('Inglês');
+            setEsp('Espanhol');
+        } else if (idiomaContext === '2' || idiomaContext === 2) {
+            setPt('Portuguese');
+            setEn('English');
+            setEsp('Spanish');
+        } else if (idiomaContext === '3' || idiomaContext === 3) {
+            setPt('Portugués');
+            setEn('Inglés');
+            setEsp('Español');
+        }
+    }, [idiomaContext]);
 
     return (
         <div className={Styles.browser}>
@@ -39,9 +59,9 @@ export default function Skills() {
 
                 <SkillRow Icone={faGitAlt} item='Git' qtdEstrelas={5} cor={'#E94E31'} />
 
-                <SkillRow Icone={faLanguage} item={(idiomaContext === 1 || idiomaContext === '1' || idiomaContext === null ? 'Português' : 'Portuguese')} qtdEstrelas={10} cor={'#58585c'} />
-                <SkillRow Icone={faLanguage} item={(idiomaContext === 1 || idiomaContext === '1' || idiomaContext === null ? 'Inglês' : 'English')} qtdEstrelas={9} cor={'#58585c'} />
-                <SkillRow Icone={faLanguage} item={(idiomaContext === 1 || idiomaContext === '1' || idiomaContext === null ? 'Espanhol' : 'Spanish')} qtdEstrelas={6} cor={'#58585c'} />
+                <SkillRow Icone={faLanguage} item={pt} qtdEstrelas={10} cor={'#58585c'} />
+                <SkillRow Icone={faLanguage} item={en} qtdEstrelas={9} cor={'#58585c'} />
+                <SkillRow Icone={faLanguage} item={esp} qtdEstrelas={6} cor={'#58585c'} />
             </div>
         </div>
     )

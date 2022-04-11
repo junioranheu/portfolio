@@ -10,7 +10,7 @@ function conteudoTimeline(idioma) {
             'Maio de 2021 — Presente',
             'Analista de desenvolvimento fullstack pleno, .NET — Instituto de Pesquisa e Planejamento de São José dos Campos'
         ];
-    } else {
+    } else if (idioma === '2' || idioma === 2) {
         conteudo = [
             'May 2017 — February 2018',
             'IT intern – Software development — Apolo Tubulars',
@@ -18,6 +18,15 @@ function conteudoTimeline(idioma) {
             'IT assistent – Software development — Apolo Tubulars',
             'May 2021 — Present',
             '.NET fullstack dev — IPPLAN — Research and Planning Institute'
+        ];
+    } else if (idioma === '3' || idioma === 3) {
+        conteudo = [
+            'Mayo del 2017 — Febrero del 2018',
+            'Desarrollador pasante — Apolo Tubulars',
+            'Febrero del 2018 — Mayo 2021',
+            'Asistente desarrollador — Apolo Tubulars',
+            'Mayo del 2021 — Hoy',
+            'Desarrollador fullstack .NET — IPPLAN - Instituto de Investigación y Planificación de São José dos Campos.'
         ];
     }
 

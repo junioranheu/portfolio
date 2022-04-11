@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import Styles from '../../styles/sidebar.module.css';
 import { IdiomaContext, IdiomaStorage } from '../../utils/context/idiomaContext';
 import BR from '../svg/brasil';
+import ESP from '../svg/espanha';
 import EUA from '../svg/usa';
 
 export default function Sidebar() {
@@ -26,6 +27,10 @@ export default function Sidebar() {
 
                     <span className={Styles.bandeira} title='Translate to english' id='2' onClick={(e) => handleIdioma(e)}>
                         <EUA width='16px' />
+                    </span>
+        
+                    <span className={Styles.bandeira} title='Traducir para español' id='3' onClick={(e) => handleIdioma(e)}>
+                        <ESP width='16px' />
                     </span>
 
                     <span>@junioranheu</span>

@@ -48,7 +48,7 @@
     display: flex;
     gap: 15px;
 
-    top: 2.5rem;
+    top: 3.6rem;
     text-align: right;
     color: black;
 }
@@ -75,10 +75,16 @@
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */
+@media (max-width:1505px) {
+    .side .top {
+        top: 4rem;
+    }
+}
+
 /* hi-res laptops and desktops */
 @media (max-width:1281px) {
     .side .top {
-        top: 3rem;
+        top: 4.2rem;
     }
 }
 
@@ -88,7 +94,7 @@
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (max-width:801px) {
     .side .top {
-        top: 3.5rem;
+        top: 4.5rem;
     }
 }
 
@@ -98,6 +104,6 @@
 /* smartphones, Android phones, landscape iPhone */
 @media (max-width:480px) {
     .side .top {
-        top: 4rem;
+        top: 5.5rem;
     }
 }

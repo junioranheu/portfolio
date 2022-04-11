@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useRef } from 'react';
+import React, { Fragment, useContext, useEffect, useRef } from 'react';
 import Sessao1 from '../components/sessoes/sessao1';
 import Sessao2 from '../components/sessoes/sessao2';
 import Sessao3 from '../components/sessoes/sessao3';
@@ -6,13 +6,21 @@ import Sessao4 from '../components/sessoes/sessao4';
 import Sessao5 from '../components/sessoes/sessao5';
 import Sessao6 from '../components/sessoes/sessao6';
 import Sessao7 from '../components/sessoes/sessao7';
+import { IdiomaContext } from '../utils/context/idiomaContext';
 
 export default function Index() {
-    
-    useEffect(() => {
-        document.title = 'Portifólio — @junioranheu';
-    }, []);
+    const [idiomaContext] = useContext(IdiomaContext);
 
+    useEffect(() => {
+        if (idiomaContext === '1' || idiomaContext === 1 || idiomaContext === null) {
+            document.title = 'Portifólio — @junioranheu';
+        } else if (idiomaContext === '2' || idiomaContext === 2) {
+            document.title = 'Portfolio — @junioranheu';
+        } else if (idiomaContext === '3' || idiomaContext === 3) {
+            document.title = 'Portafolio — @junioranheu';
+        }
+    }, [idiomaContext]);
+ 
     const refSessao1 = useRef(null);
     const refSessao2 = useRef(null);
     const refSessao3 = useRef(null);

@@ -6,7 +6,8 @@ import ConteudoSessao7 from '../../utils/traducao/conteudoSessao7';
 
 export default function Sessao7({ refSessao7, corFundo, corTexto }) {
     const mensagemBr = ['um ótimo domingo', 'uma ótima segunda-feira', 'uma ótima terça-feira', 'uma ótima quarta-feira', 'uma ótima quinta-feira', 'uma ótima sexta-feira', 'um ótimo sábado'];
-    const mensagemEn = ['a great sunday', 'a great monday', 'a great tuesday', 'a great wednesday', 'a great thurday', 'a great friday', 'a great saturday'];
+    const mensagemEn = ['a great sunday', 'a great monday', 'a great tuesday', 'a great wednesday', 'a great thursday', 'a great friday', 'a great saturday'];
+    const mensagemEsp = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
     const [diaDaSemana, setDiaDaSemana] = useState(null);
 
     const [idiomaContext] = useContext(IdiomaContext);
@@ -17,7 +18,13 @@ export default function Sessao7({ refSessao7, corFundo, corTexto }) {
         setConteudo(ConteudoSessao7(idiomaContext));
 
         // Definir a mensagem do dia da semana;
-        setDiaDaSemana((idiomaContext === 1 || idiomaContext === '1' ? mensagemBr[new Date().getDay()] : mensagemEn[new Date().getDay()]));
+        if (idiomaContext === '1' || idiomaContext === 1 || idiomaContext === null) {
+            setDiaDaSemana(mensagemBr[new Date().getDay()]);
+        } else if (idiomaContext === '2' || idiomaContext === 2) {
+            setDiaDaSemana(mensagemEn[new Date().getDay()]);
+        } else if (idiomaContext === '3' || idiomaContext === 3) {
+            setDiaDaSemana(mensagemEsp[new Date().getDay()]);
+        }
     }, [idiomaContext]);
 
     return (
