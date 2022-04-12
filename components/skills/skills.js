@@ -44,7 +44,7 @@ export default function Skills() {
                 <SkillRow Icone={faCss3Alt} item='CSS' qtdEstrelas={7} cor={'#1B74BA'} />
                 <SkillRow Icone={faJsSquare} item='Javascript' qtdEstrelas={8} cor={'#F7E017'} />
                 <SkillRow Icone={faCode} item='C#/.NET' qtdEstrelas={9} cor={'#845EC2'} />
-                <SkillRow Icone={faCode} item='Pascal/Delphi' qtdEstrelas={5} cor={'#888a75'} />
+                <SkillRow Icone={faCode} item='Pascal/Delphi' qtdEstrelas={3} cor={'#888a75'} />
                 <SkillRow Icone={faPhp} item='PHP' qtdEstrelas={2} cor={'#777BB3'} />
                 <SkillRow Icone={faPython} item='Python' qtdEstrelas={3} cor={'#FED847'} />
 
