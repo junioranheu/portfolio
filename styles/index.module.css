@@ -66,6 +66,7 @@
     letter-spacing: 1.4px;
     color: inherit;
     transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+    width: fit-content;
     cursor: pointer;
 }
 
