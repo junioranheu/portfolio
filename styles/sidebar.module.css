@@ -68,7 +68,8 @@
 
 .side .bottom a:nth-child(n+2) {
     /* background-color: pink; */
-    margin-left: 1rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
 }
 
 .side .bottom:hover a {
