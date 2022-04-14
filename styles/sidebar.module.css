@@ -66,6 +66,11 @@
     bottom: 75px;
 }
 
+.side .bottom a:nth-child(n+2) {
+    /* background-color: pink; */
+    margin-left: 1rem;
+}
+
 .side .bottom:hover a {
     color: rgba(0, 0, 0, 0.2);
 }
