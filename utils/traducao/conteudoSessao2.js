@@ -34,7 +34,7 @@ function conteudoSessao2(idioma) {
             'Lorena, São Paulo.',
             'Brasil.',
             'Empecé mi carrera como desarrolador en 2017. Actualmente trabajo en IPPLAN - Instituto de Investigación y Planificación de São José dos Campos.',
-            'Me encanta escribir codigo y también incentivar a otras personas a programar.',
+            'Me encanta programar y también incentivar a otras personas a hacerlo.',
             'Echale un vistazo a todos mis proyectos en mi <a href="https://github.com/junioranheu" target="_blank" rel="noreferrer" className={Styles.link}>Github</a>, y en mi perfil de <a href="https://www.linkedin.com/in/junioranheu/" target="_blank" rel="noreferrer" className={Styles.link}>Linkedin</a>.'
         ];
     }
