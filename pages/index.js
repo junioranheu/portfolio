@@ -61,7 +61,7 @@ export default function Index() {
             <Sessao5 refSessao5={refSessao5} corFundo={'#1EB955'} corTexto={'#FFF'} />
 
             {/* Projeto 2 */}
-            <Sessao6 corFundo={'#C873E6'} corTexto={'#FFF'} />
+            <Sessao6 corFundo={'#5635FF'} corTexto={'#FFF'} />
 
             {/* Projeto 3 */}
             <Sessao7 corFundo={'#9900F0'} corTexto={'#FFF'} />
