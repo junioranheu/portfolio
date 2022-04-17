@@ -6,7 +6,7 @@ function conteudoSessao7(idioma) {
             'Projeto #3 — Detector de expressões',
             'Aplicação feita com React.js e Next.js, utilizando a API face-api.js para detecção e reconhecimento facial.',
             'Nenhum dado ou imagem é gravado. Tudo é processado apenas no client-side. Não se preocupe. 🙃'
-        ];
+        ]; 
     } else if (idioma === '2' || idioma === 2) {
         conteudo = [
             'Project #3 — Expression detector',
@@ -16,7 +16,7 @@ function conteudoSessao7(idioma) {
     }else if (idioma === '3' || idioma === 3) {
         conteudo = [
             'Proyect #3 — Detector de expresión',
-            'App hecha usando React.js, Next.js y face-api.js para detección y reconocimiento facial.',
+            'Esta app fue hecha con React.js, Next.js y face-api.js para detección y reconocimiento facial.',
             'No se graban datos ni imágenes. Todo se procesa en client-side. No se preocupe. 🙃'
         ];
     }
