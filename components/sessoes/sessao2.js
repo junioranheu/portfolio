@@ -14,7 +14,7 @@ export default function Sessao2({ refSessao2, corFundo, corTexto }) {
     }, [idiomaContext]);
 
     return (
-        <section className={Styles.section} ref={refSessao2} style={{ backgroundColor: corFundo, color: corTexto }}>
+        <section className={Styles.section} ref={refSessao2} style={{ backgroundImage: corFundo, color: corTexto }}>
             <div className={Styles.section__inner}>
                 <div className={Styles.block}>
                     <a className={Styles.pre}><span>#2</span>{conteudo[0]}</a>

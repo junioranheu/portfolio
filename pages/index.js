@@ -44,12 +44,12 @@ export default function Index() {
                 refSessao5={refSessao5}
                 refSessaoFinal={refSessaoFinal}
                 handleScroll={handleScroll}
-                corFundo={'#FDEF52'}
+                corFundo={'linear-gradient(to left top, #fdef52, #fced46, #fbeb39, #fae92a, #f9e712)'}
                 corTexto={'#181818'}
             />
 
             {/* Sobre */}
-            <Sessao2 refSessao2={refSessao2} corFundo={'#FFF'} corTexto={'#181818'} />
+            <Sessao2 refSessao2={refSessao2} corFundo={'linear-gradient(to left top, #ffffff, #fafafa, #f6f4f5, #f2eeef, #eee9e9)'} corTexto={'#181818'} />
 
             {/* Skills */}
             <Sessao3 refSessao3={refSessao3} corFundo={'#DE5F5F'} corTexto={'#FFF'} />

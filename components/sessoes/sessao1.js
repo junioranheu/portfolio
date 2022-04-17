@@ -7,14 +7,14 @@ import ConteudoSessao1 from '../../utils/traducao/conteudoSessao1';
 export default function Sessao1(props) {
     const [idiomaContext] = useContext(IdiomaContext);
     const [conteudo, setConteudo] = useState(ConteudoSessao1(idiomaContext));
-
+    
     useEffect(() => {
         // console.log(idiomaContext);
         setConteudo(ConteudoSessao1(idiomaContext));
     }, [idiomaContext]);
 
     return (
-        <section className={Styles.sessao1} ref={props.refSessao1} style={{ backgroundColor: props.corFundo, color: props.corTexto }}>
+        <section className={Styles.sessao1} ref={props.refSessao1} style={{ backgroundImage: props.corFundo, color: props.corTexto }}>
             <div className={Styles.section__inner}>
                 <div className={Styles.block}>
                     <Bounce triggerOnce direction='up'>
