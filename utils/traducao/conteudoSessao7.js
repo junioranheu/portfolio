@@ -3,33 +3,21 @@ function conteudoSessao7(idioma) {
 
     if (idioma === '1' || idioma === 1 || idioma === null) {
         conteudo = [
-            'Entre em contato comigo',
-            'Para me contatar, envie um e-mail para:',
-            'Outros links para contato:',
-            ' e',
-            'Veja todos meus projetos pessoais em meu ',
-            'Obrigado por chegar até aqui.',
-            'Tenha '
+            'Projeto #3 — Detector de expressões',
+            'Aplicação feita com React.js e Next.js, utilizando a API face-api.js para detecção e reconhecimento facial.',
+            'Nenhum dado ou imagem é gravado. Tudo é processado apenas no client-side. Não se preocupe. 🙃'
         ];
     } else if (idioma === '2' || idioma === 2) {
         conteudo = [
-            'Get in touch',
-            'Mail me at:',
-            'Other links:',
-            ', and',
-            'Check out all my personal projects: ',
-            'Cheers.',
-            'Have '
+            'Project #3 — Expression detector',
+            'App made using React.js, Next.js and face-api.js for facial detection and recognition.',
+            'No data or images are recorded. Everything is processed on the client-side. Don\'t you worry.🙃'
         ];
     }else if (idioma === '3' || idioma === 3) {
         conteudo = [
-            'Ponte en contacto conmigo',
-            'Envíame un e-mail para:',
-            'Otros links:',
-            ' y',
-            'Échale un vistazo a mis proyectos personales en mi ',
-            '¡Gracias por tu aténcion!',
-            'Que tengas un buen '
+            'Proyect #3 — Detector de expresión',
+            'App hecha usando React.js, Next.js y face-api.js para detección y reconocimiento facial.',
+            'No se graban datos ni imágenes. Todo se procesa en client-side. No se preocupe. 🙃'
         ];
     }
 

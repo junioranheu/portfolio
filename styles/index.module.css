@@ -13,6 +13,11 @@
     margin-top: 0.5rem;
 }
 
+.link {
+    /* background-color: #de5f5f; */
+    cursor: pointer !important;
+}
+
 /* =-=-=-=-=-=-=-=-=-=-= Primeira sessão =-=-=-=-=-=-=-=-=-=-= */
 .sessao1 {
     /* background-color: red !important; */

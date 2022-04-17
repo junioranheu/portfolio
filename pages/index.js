@@ -6,6 +6,7 @@ import Sessao4 from '../components/sessoes/sessao4';
 import Sessao5 from '../components/sessoes/sessao5';
 import Sessao6 from '../components/sessoes/sessao6';
 import Sessao7 from '../components/sessoes/sessao7';
+import SessaoFinal from '../components/sessoes/sessaoFinal';
 import { IdiomaContext } from '../utils/context/idiomaContext';
 
 export default function Index() {
@@ -20,13 +21,13 @@ export default function Index() {
             document.title = 'Portafolio — @junioranheu';
         }
     }, [idiomaContext]);
- 
+
     const refSessao1 = useRef(null);
     const refSessao2 = useRef(null);
     const refSessao3 = useRef(null);
     const refSessao4 = useRef(null);
     const refSessao5 = useRef(null);
-    const refSessao7 = useRef(null);
+    const refSessaoFinal = useRef(null);
 
     function handleScroll(ref) {
         ref.current.scrollIntoView({ block: 'start', behavior: 'smooth' })
@@ -41,7 +42,7 @@ export default function Index() {
                 refSessao3={refSessao3}
                 refSessao4={refSessao4}
                 refSessao5={refSessao5}
-                refSessao7={refSessao7}
+                refSessaoFinal={refSessaoFinal}
                 handleScroll={handleScroll}
                 corFundo={'#FDEF52'}
                 corTexto={'#181818'}
@@ -62,8 +63,11 @@ export default function Index() {
             {/* Projeto 2 */}
             <Sessao6 corFundo={'#C873E6'} corTexto={'#FFF'} />
 
-            {/* Contato */}
-            <Sessao7 refSessao7={refSessao7} corFundo={'#FFF'} />
+            {/* Projeto 3 */}
+            <Sessao7 corFundo={'#9900F0'} corTexto={'#FFF'} />
+
+            {/* Contato - Sessão final */}
+            <SessaoFinal refSessaoFinal={refSessaoFinal} corFundo={'#FFF'} />
         </Fragment >
     )
 }

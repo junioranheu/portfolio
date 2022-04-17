@@ -1,2 +1,2 @@
 --
-Colocar um gif no ola
+ajustar o background color

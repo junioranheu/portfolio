@@ -53,12 +53,17 @@
     color: black;
 }
 
-.side .top .bandeira{
+.side .top .bandeira {
     display: flex;
     justify-content: center;
     align-items: center;
 
     cursor: pointer;
+}
+
+.side .top .bandeira:hover {
+    transform: scale(1.05);
+    transition: all ease-in 0.2s;
 }
 
 .side .bottom {
@@ -78,6 +83,7 @@
 
 .side .bottom:hover a:hover {
     color: rgba(0, 0, 0, 0.8);
+    cursor: pointer !important;
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */

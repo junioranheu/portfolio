@@ -35,7 +35,7 @@ export default function Sessao1(props) {
                             <li><span onClick={() => props.handleScroll(props.refSessao3)}>{conteudo[5]} <span>{conteudo[6]}</span></span></li>
                             <li><span onClick={() => props.handleScroll(props.refSessao4)}>{conteudo[7]} <span>{conteudo[8]}</span></span></li>
                             <li><span onClick={() => props.handleScroll(props.refSessao5)}>{conteudo[9]} <span>{conteudo[10]}</span></span></li>
-                            <li><span onClick={() => props.handleScroll(props.refSessao7)}>{conteudo[11]} <span>{conteudo[12]}</span></span></li>
+                            <li><span onClick={() => props.handleScroll(props.refSessaoFinal)}>{conteudo[11]} <span>{conteudo[12]}</span></span></li>
                         </ul>
                     </Fade>
                 </div>
