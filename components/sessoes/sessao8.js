@@ -24,7 +24,6 @@ export default function Sessao8({ corFundo, corTexto }) {
 
             <div className={Styles.section__inner100}>
                 <div className={Styles.block}>
-                    <a className={Styles.pre}><span>#5</span>{conteudo[0]}</a>
                     <h2 className={Styles.link}>
                         <a href={urlProjeto} target='_blank' rel='noreferrer' className={Styles.link}>{conteudo[1]}</a>
                     </h2>
