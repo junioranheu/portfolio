@@ -4,7 +4,7 @@ function conteudoSessaoFinal(idioma) {
     if (idioma === '1' || idioma === 1 || idioma === null) {
         conteudo = [
             'Entre em contato comigo',
-            'Para me contatar, envie um e-mail para:',
+            'Para entrar em contato comigo, envie um e-mail para:',
             'Outros links para contato:',
             ' e',
             'Veja todos meus projetos pessoais em meu ',
