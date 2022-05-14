@@ -6,6 +6,7 @@ import Sessao4 from '../components/sessoes/sessao4';
 import Sessao5 from '../components/sessoes/sessao5';
 import Sessao6 from '../components/sessoes/sessao6';
 import Sessao7 from '../components/sessoes/sessao7';
+import Sessao8 from '../components/sessoes/sessao8';
 import SessaoFinal from '../components/sessoes/sessaoFinal';
 import { IdiomaContext } from '../utils/context/idiomaContext';
 
@@ -65,6 +66,9 @@ export default function Index() {
 
             {/* Projeto 3 */}
             <Sessao7 corFundo={'#9900F0'} corTexto={'#FFF'} />
+
+            {/* Projeto 4 */}
+            <Sessao8 corFundo={'#1EB955'} corTexto={'#FFF'} />
 
             {/* Contato - Sessão final */}
             <SessaoFinal refSessaoFinal={refSessaoFinal} corFundo={'#FFF'} />

@@ -13,7 +13,7 @@ export default function SkillRow({ Icone, item, qtdEstrelas, cor }) {
                 {Icone && <i><FontAwesomeIcon icon={Icone} size='sm' /></i>}
             </p>
 
-            <p >
+            <p className={Styles.pHeading}>
                 <span className={Styles.heading} style={{ color: '#555555' }}>{item}</span>
             </p>
 

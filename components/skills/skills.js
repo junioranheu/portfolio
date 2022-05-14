@@ -49,9 +49,11 @@ export default function Skills() {
                 <SkillRow Icone={faPython} item='Python' qtdEstrelas={3} cor={'#FED847'} />
 
                 <SkillRow Icone={faDatabase} item='MySQL' qtdEstrelas={8} cor={'#EA8C10'} />
-                <SkillRow Icone={faDatabase} item='SSQL' qtdEstrelas={7} cor={'#304060'} />
+                <SkillRow Icone={faDatabase} item='SQL Server' qtdEstrelas={7} cor={'#304060'} />
 
+                <SkillRow Icone={faCode} item='xUnit' qtdEstrelas={5} cor={'#845EC2'} />
                 <SkillRow Icone={faReact} item='React.js/Next.js' qtdEstrelas={8} cor={'#61DAFB'} />
+                <SkillRow Icone={faReact} item='React Native' qtdEstrelas={7} cor={'#61DAFB'} />
                 <SkillRow Icone={faAngular} item='Angular' qtdEstrelas={1} cor={'#D82D2F'} />
                 <SkillRow Icone={faCode} item='JQuery' qtdEstrelas={8} cor={'#0865A6'} />
                 <SkillRow Icone={faBootstrap} item='Bootstrap' qtdEstrelas={6} cor={'#6C10ED'} />

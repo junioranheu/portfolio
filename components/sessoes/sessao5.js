@@ -40,6 +40,6 @@ export default function Sessao5({ refSessao5, corFundo, corTexto }) {
                     <Carousel imgs={[Spotify1, Spotify2, Spotify3]} url={urlProjeto} />
                 </div>
             </div>
-        </section >
+        </section>
     )
 }

@@ -1,19 +1,7 @@
-const minify = { 
-  swcMinify: true,
-};
+const withVideos = require('next-videos'); // Habilitar import de vídeos; https://www.npmjs.com/package/next-videos
 
-const final = {
-  minify,
-
-  webpack(config, options) {
-    config.module.rules.push({
-      test: /\.mp3$/,
-      use: {
-        loader: 'url-loader',
-      },
-    });
-    return config;
-  },
-};
-
-module.exports = final;
+module.exports = withVideos(
+    {
+        swcMinify: true, // Habilitar minify em produção: https://nextjs.org/docs/advanced-features/compiler
+    }
+)

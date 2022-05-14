@@ -108,10 +108,15 @@
     width: 30px;
 }
 
+.pHeading{
+    /* background-color: red; */
+    min-width: 300px !important;
+}
+
 .row .heading {
     position: relative;
     top: -5px;
-    color: #616B7F;
+    /* color: #616B7F; */
     font-size: 15px;
     font-weight: 900;
 }

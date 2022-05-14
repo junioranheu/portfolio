@@ -197,12 +197,38 @@
     cursor: pointer;
 }
 
+/* =-=-=-=-=-=-=-=-=-=-=-=- Vídeo =-=-=-=-=-=-=-=-=-=-=-=- */
+.divVideoWrapper{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.video {
+    /* height: 50vh; */
+    /* width: 50vw; */
+    height: 20rem;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 10px;
+}
+
 /* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */
 /* hi-res laptops and desktops */
 @media (max-width:1281px) {}
 
 /* big landscape tablets, laptops, and desktops */
-@media (max-width:1025px) {}
+@media (max-width:1025px) {
+    .divVideoWrapper{
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (max-width:801px) {
