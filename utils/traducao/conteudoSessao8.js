@@ -20,7 +20,7 @@ function conteudoSessao8(idioma) {
     }else if (idioma === '3' || idioma === 3) {
         conteudo = [
             'Proyectos personales',
-            'Proyecto #4 — Spotify mobile',
+            'Proyecto #4 — Aplicacion de Spotify',
             'Clon identico de Spotify, ahora en version de telefono. 🎶',
             'Desarrollado para practicar React Native.',
             '¡Funciona tanto para Android y para iOS!'

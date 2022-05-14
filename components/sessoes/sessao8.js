@@ -6,7 +6,7 @@ import { IdiomaContext } from '../../utils/context/idiomaContext';
 import ConteudoSessao8 from '../../utils/traducao/conteudoSessao8';
 
 export default function Sessao8({ corFundo, corTexto }) {
-    const [urlProjeto] = useState('https://framer-anheu.vercel.app/');
+    const [urlProjeto] = useState('https://github.com/junioranheu/spotify-app');
 
     const [idiomaContext] = useContext(IdiomaContext);
     const [conteudo, setConteudo] = useState(ConteudoSessao8(idiomaContext));
@@ -30,7 +30,7 @@ export default function Sessao8({ corFundo, corTexto }) {
 
                     <div className={Styles.divVideoWrapper}>
                         {/* <video className={Styles.video} autoPlay loop muted playsInline disablePictureInPicture controls={false}> */}
-                        <video className={Styles.video} loop playsInline disablePictureInPicture controls controlsList='nofullscreen  nodownload'>
+                        <video className={Styles.video} loop playsInline disablePictureInPicture controls controlsList='nofullscreen nodownload'>
                             <source src={VideoSpotifyAppWebm} type='video/mp4' />
                             <source src={VideoSpotifyAppMp4} type='video/mp4' />
                         </video>
