@@ -7,7 +7,7 @@ function conteudoSessao8(idioma) {
             'Projeto #4 — App do Spotify',
             'Um clone fiel do Spotify, agora mobile. 🎶',
             'Desenvolvido para praticar React Native.',
-            'Built for both Android quanto iOS!'
+            'Feito para funcionar perfeitamente tanto no Android quanto iOS!'
         ];
     } else if (idioma === '2' || idioma === 2) {
         conteudo = [
