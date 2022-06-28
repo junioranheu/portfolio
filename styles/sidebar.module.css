@@ -29,6 +29,7 @@
     color: inherit;
     word-spacing: 0;
     transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+    font-weight: 600;
 }
 
 .side .top,

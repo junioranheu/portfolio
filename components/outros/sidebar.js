@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import Styles from '../../styles/sidebar.module.css';
 import { IdiomaContext, IdiomaStorage } from '../../utils/context/idiomaContext';
 import BR from '../svg/brasil';
@@ -39,7 +39,7 @@ export default function Sidebar() {
                 <div className={Styles.bottom}>
                     <a href='https://github.com/junioranheu' target='_blank' rel='noreferrer'>Github</a>
                     <a href='https://www.linkedin.com/in/junioranheu/' target='_blank' rel='noreferrer'>Linkedin</a>
-                    <a href='https://www.instagram.com/junioranheu/' target='_blank' rel='noreferrer'>Instagram</a>
+                    {/* <a href='https://www.instagram.com/junioranheu/' target='_blank' rel='noreferrer'>Instagram</a> */}
                     <a href='https://www.facebook.com/JuniorAnheu' target='_blank' rel='noreferrer'>Facebook</a>
                     <a href='mailto:junioranheu@gmail.com'>E-mail</a>
                 </div>

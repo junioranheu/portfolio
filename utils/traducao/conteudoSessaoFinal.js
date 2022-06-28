@@ -16,7 +16,7 @@ function conteudoSessaoFinal(idioma) {
             'Get in touch',
             'Mail me at:',
             'Other links:',
-            ', and',
+            ' and',
             'Check out all my personal projects: ',
             'Cheers.',
             'Have '

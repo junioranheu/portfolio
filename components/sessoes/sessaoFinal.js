@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Bounce, Fade } from 'react-awesome-reveal';
 import Styles from '../../styles/index.module.css';
 import { IdiomaContext } from '../../utils/context/idiomaContext';
@@ -44,8 +44,8 @@ export default function SessaoFinal({ refSessaoFinal, corFundo, corTexto }) {
                     <Fade triggerOnce cascade>
                         <p className={Styles.lead}>
                             {conteudo[2]}<br />
-                            <a href='https://www.linkedin.com/in/junioranheu/' target='_blank' rel='noreferrer'>Linkedin</a>,&nbsp;
-                            <a href='https://www.instagram.com/junioranheu/' target='_blank' rel='noreferrer'>Instagram</a>{conteudo[3]}&nbsp;
+                            <a href='https://www.linkedin.com/in/junioranheu/' target='_blank' rel='noreferrer'>Linkedin</a>{conteudo[3]}&nbsp;
+                            {/* <a href='https://www.instagram.com/junioranheu/' target='_blank' rel='noreferrer'>Instagram</a>{conteudo[3]}&nbsp; */}
                             <a href='https://www.facebook.com/JuniorAnheu' target='_blank' rel='noreferrer'>Facebook</a>.
                         </p>
 

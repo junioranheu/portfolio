@@ -1,15 +1,16 @@
-import React, { useContext, useEffect, useState } from 'react';
-import Framer1 from '../../static/images/projetos/framer1.webp';
-import Framer2 from '../../static/images/projetos/framer2.webp';
-import Framer3 from '../../static/images/projetos/framer3.webp';
-import Framer4 from '../../static/images/projetos/framer4.webp';
+import { useContext, useEffect, useState } from 'react';
+import Anheu1 from '../../static/images/projetos/anheu1.webp';
+import Anheu2 from '../../static/images/projetos/anheu2.webp';
+import Anheu3 from '../../static/images/projetos/anheu3.webp';
+import Anheu4 from '../../static/images/projetos/anheu4.webp';
+import Anheu5 from '../../static/images/projetos/anheu5.webp';
 import Styles from '../../styles/index.module.css';
 import { IdiomaContext } from '../../utils/context/idiomaContext';
 import ConteudoSessao6 from '../../utils/traducao/conteudoSessao6';
 import Carousel from '../outros/carousel';
 
 export default function Sessao6({ corFundo, corTexto }) {
-    const [urlProjeto] = useState('https://framer-anheu.vercel.app/');
+    const [urlProjeto] = useState('https://anheu.vercel.app/');
 
     const [idiomaContext] = useContext(IdiomaContext);
     const [conteudo, setConteudo] = useState(ConteudoSessao6(idiomaContext));
@@ -37,7 +38,7 @@ export default function Sessao6({ corFundo, corTexto }) {
                         {conteudo[3]}
                     </p>
 
-                    <Carousel imgs={[Framer1, Framer2, Framer3, Framer4]} url={urlProjeto} />
+                    <Carousel imgs={[Anheu1, Anheu2, Anheu3, Anheu4, Anheu5]} url={urlProjeto} />
                 </div>
             </div>
         </section>
